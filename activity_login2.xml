@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:backgroundTint="@color/background">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/L_img_1"
+        />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_back"
+        android:id="@+id/ic_back"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/L_img_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Selamat Datang Kembali"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:id="@+id/L_txt_1"
+        />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/L_txt_1"
+    android:src="@drawable/logoriptha1"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:id="@+id/L_img_2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/L_img_2"
+        android:padding="30dp"
+        android:id="@+id/ly_1">
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttonshape"
+            android:hint="Masukam Email"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/edt1_fullname"
+            android:backgroundTint="@color/secondarycolor"
+            android:paddingLeft="15dp"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:id="@+id/edt2_fullname"
+            />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttonshape"
+            android:hint="Masukan Password"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/edt3_fullname"
+            android:backgroundTint="@color/secondarycolor"
+            android:paddingLeft="15dp"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:id="@+id/edt4_fullname"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ly_1"
+        android:text="login"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshape"
+        android:width="200dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:id="@+id/L_btn_1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/L_btn_1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar Sekarang."
+            android:layout_below="@id/L_btn_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:id="@+id/txt_register"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:layout_below="@id/txt_register"
+            android:layout_centerHorizontal="true"
+            android:textSize="12dp"
+            android:textColor="@color/primarycolor"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp">
+        </TextView>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

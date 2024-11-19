@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:backgroundTint="@color/background">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/R_img_1"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/R_img_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Welcome On Board !"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@id/R_img_1"
+        android:text="Silahkan isi data Data diri Anda untuk mendaftar"
+        android:textSize="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/R_txt_2"
+        android:textColor="@color/black"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@id/R_txt_2"
+    android:padding="30dp"
+    android:id="@+id/ly_1">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshape"
+        android:hint="Silahkan isi nama lengkap Anda"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/R_txt_2"
+        android:backgroundTint="@color/secondarycolor"
+        android:paddingLeft="15dp"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:id="@+id/edt1_fullname"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshape"
+        android:hint="Silahkan isi email Anda"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edt1_fullname"
+        android:backgroundTint="@color/secondarycolor"
+        android:paddingLeft="15dp"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:id="@+id/edt2_fullname"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshape"
+        android:hint="Buat Password"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edt2_fullname"
+        android:backgroundTint="@color/secondarycolor"
+        android:paddingLeft="15dp"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:id="@+id/edt3_fullname"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshape"
+        android:hint="Konfirmasi Password"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edt3_fullname"
+        android:backgroundTint="@color/secondarycolor"
+        android:paddingLeft="15dp"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:id="@+id/edt4_fullname"
+        />
+
+</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ly_1"
+        android:text="login"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshape"
+        android:width="200dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:id="@+id/R_btn_1"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@id/R_btn_1"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anda sudah punya akun ?"
+        android:layout_below="@id/R_btn_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:id="@+id/R_akun_1">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/R_akun_1"
+        android:layout_centerHorizontal="true"
+        android:textSize="12dp"
+        android:textColor="@color/primarycolor"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txt_login">
+    </TextView>
+
+</LinearLayout>
+
+
+
+</RelativeLayout>
